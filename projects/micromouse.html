@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title — Justin Dugan</title>
+  <title>Micromouse — Justin Dugan</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
@@ -25,31 +25,81 @@
   <main class="page-content">
     <p><a href="../projects.html">&larr; Back to Projects</a></p>
 
-    <h1>Title</h1>
-    <p class="subtitle">Placeholder</p>
+    <h1>Micromouse</h1>
+    <p class="subtitle">An autonomous robotics competition where you must solve a maze as fast as possible</p>
 
     <img
-      src="https://placehold.co/720x400?text=Hero+Image"
-      alt="Fractal Renderer screenshot"
+      src="../MouseFront.png"
+      alt="Front of Micromouse"
       style="border-radius: 8px; margin-bottom: 2rem;"
     >
 
-    <h2>Overview</h2>
-    <p>Placeholder</p>
+<h2>Overview</h2>
+<p>
+  Micromouse is one of the longest-running robotics competitions in the world. A
+  small robot — roughly 10x10cm — has to solve a maze as fast as possible,
+  completely autonomously. I was the software lead on our team and also helped
+  significantly with prototyping. We designed everything on breadboards before
+  committing to a PCB, which ended up being a really important part of our
+  process.
+</p>
 
-    <h2>How it works</h2>
-    <p>Placeholder</p>
+<h2>How it works</h2>
+<p>
+  The robot uses IR sensors to detect walls, a gyroscope for heading, encoders on
+  the motors for distance tracking, and an H-bridge to convert PWM signals into
+  motor voltages. On the software side, we wrote maze-solving algorithms, control
+  algorithms for smooth movement, and odometry correction using the IR sensors.
+</p>
+    <img
+      src="../WorkingOnMouse.jpeg"
+      alt="Testing the mouse for the first time"
+      style="border-radius: 8px; margin-bottom: 2rem;"
+    >
+<p>
+  We put a lot of care into the software architecture. The codebase supports
+  simulation and logging, and we were deliberate about preventing race conditions
+  and crashes. The hardest problem was calibrating the IR sensors to get reliable
+  wall data on the real robot — the readings are noisy and sensitive to
+  positioning, and this is one of the biggest things we want to improve next year.
+</p>
 
-    <h2>Results</h2>
-    <p>Placeholder</p>
+<h2>Results</h2>
+<p>
+  We brought the robot to competition, but things didn't go exactly as planned.
+  Due to logistics issues, our PCB was delivered a week before comp, so we didn't
+  have much time to test software on the actual hardware. We got the robot to
+  explore the maze, but didn't get to test our fast run or complete a full solve.
+  We learned a ton by going, and got a lot of inspiration from the other robots
+  there.
+</p>
+    <img
+      src="../InTheMaze.jpeg"
+      alt="Mouse in the maze!"
+      style="border-radius: 8px; margin-bottom: 2rem;"
+    >
+<p>
+  It was a lot of fun doing firmware and embedded work like this — it made me
+  realize I enjoy that side of robotics just as much as the controls side. For
+  next year, we're switching to different IR sensors that produce a better spot on
+  the wall, improving motor speeds, shrinking the robot, and possibly moving away
+  from the Teensy to conserve space.
+</p>
+<video
+  controls
+  width="720"
+  style="border-radius: 8px; margin-bottom: 2rem; max-width: 100%;"
+>
+  <source src="../MouseRunning.mp4" type="video/mp4">
+</video>
 
     <h2>Tools &amp; Technologies</h2>
     <p>
-      <span class="project-tag">Placeholder</span>
+      <span class="project-tag">C++</span>
     </p>
     <h2>Links</h2>
     <p>
-      Placeholder
+      <a href="https://github.com/RoboJackets/roboracing-micromouse">Source</a>
     </p>
 
   </main>
