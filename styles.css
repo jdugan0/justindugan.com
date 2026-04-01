@@ -34,6 +34,7 @@ body {
   background: var(--color-bg);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  padding-top: var(--nav-height);
 }
 
 a {
@@ -51,8 +52,9 @@ img {
 }
 
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 100;
   height: var(--nav-height);
   display: flex;
