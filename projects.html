@@ -1,66 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RSFNC1LY8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6RSFNC1LY8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-6RSFNC1LY8');
-</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — Justin Dugan</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+      gtag("config", "G-6RSFNC1LY8");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Justin Dugan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="site-name">Justin Dugan</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="JD-Resume-Concise.pdf?v=3" target="_blank">Resume</a></li>
 
-  <nav>
-    <a href="index.html" class="site-name">Justin Dugan</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="JD-Resume-Concise.pdf?v=3" target="_blank">Resume</a></li>
-      
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-  <main class="page-content">
-    <h1>Projects</h1>
-    <p class="subtitle">Things I've explored to discover more.</p>
+    <main class="page-content">
+      <h1>Projects</h1>
+      <p class="subtitle">Things I've explored to discover more.</p>
 
-    <div class="project-grid">
+      <div class="project-grid">
+        <a href="projects/fractal-renderer.html" class="project-card">
+          <img src="Fractal.png" alt="Fractal Renderer" />
+          <div class="project-card-body">
+            <h3>Fractal Renderer</h3>
+            <p>
+              Renders fractals from arbitrary user-defined math expressions in
+              real time
+            </p>
+          </div>
+        </a>
 
-      <a href="projects/fractal-renderer.html" class="project-card">
-        <img src="Fractal.png" alt="Fractal Renderer">
-        <div class="project-card-body">
-          <h3>Fractal Renderer</h3>
-          <p>Renders fractals from arbitrary user-defined math expressions in real time</p>
-        </div>
-      </a>
+        <a href="projects/particle-sim.html" class="project-card">
+          <img src="Optimizer.png" alt="Charged Particle Simulator" />
+          <div class="project-card-body">
+            <h3>Charged Particle Simulator</h3>
+            <p>
+              Charged-particle dynamics simulator with trajectory optimization
+            </p>
+          </div>
+        </a>
 
-      <a href="projects/particle-sim.html" class="project-card">
-        <img src="Optimizer.png" alt="Charged Particle Simulator">
-        <div class="project-card-body">
-          <h3>Charged Particle Simulator</h3>
-          <p>Charged-particle dynamics simulator with trajectory optimization</p>
-        </div>
-      </a>
+        <a href="projects/micromouse.html" class="project-card">
+          <img src="Mouse.png" alt="Micromouse" />
+          <div class="project-card-body">
+            <h3>Micromouse</h3>
+            <p>
+              An autonomous robotics competition where you must solve a maze as
+              fast as possible.
+            </p>
+          </div>
+        </a>
+        <a href="projects/ranker.html" class="project-card">
+          <img src="rankLeaderboard.png" alt="Ranker" />
+          <div class="project-card-body">
+            <h3>Ranking Game Website</h3>
+            <p>
+              A website where players can pick between 2 objects to create a
+              ranking of all things. An experiment to learn about databases.
+            </p>
+          </div>
+        </a>
 
-      <a href="projects/micromouse.html" class="project-card">
-        <img src="Mouse.png" alt="Micromouse">
-        <div class="project-card-body">
-          <h3>Micromouse</h3>
-          <p>An autonomous robotics competition where you must solve a maze as fast as possible.</p>
-        </div>
-      </a>
-
-      <!-- <a href="projects/6502.html" class="project-card">
+        <!-- <a href="projects/6502.html" class="project-card">
         <img src="6502.png" alt="6502 Breadboard Computer">
         <div class="project-card-body">
           <h3>6502 Breadboard Computer</h3>
@@ -75,9 +99,7 @@
           <p>A video game made in 96 hours. Placed 74/9500</p>
         </div>
       </a> -->
-
-    </div>
-  </main>
-
-</body>
+      </div>
+    </main>
+  </body>
 </html>
